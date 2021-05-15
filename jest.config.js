@@ -5,6 +5,9 @@ module.exports = {
     '<rootDir>/libs/workbasket/feature/workbasket-list',
     '<rootDir>/libs/workbasket/feature/workbasket-details',
     '<rootDir>/libs/shared/data-access',
-    '<rootDir>/libs/shared/utils'
+    '<rootDir>/libs/shared/utils',
+    '<rootDir>/libs/shared/components/shell/routes',
+    '<rootDir>/libs/shared/components/shell/ui/layout',
+    '<rootDir>/libs/shared/components/shell/ui/navbar'
   ]
 };

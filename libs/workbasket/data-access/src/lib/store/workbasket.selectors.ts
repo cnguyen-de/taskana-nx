@@ -1,8 +1,4 @@
-import {
-  Workbasket,
-  WorkbasketState,
-  WorkbasketStateModel
-} from '@taskana/workbasket/data-access';
+import { Workbasket, WorkbasketState, WorkbasketStateModel } from '@taskana/workbasket/data-access';
 import { Selector } from '@ngxs/store';
 
 export class WorkbasketSelectors {

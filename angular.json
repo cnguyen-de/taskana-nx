@@ -47,10 +47,7 @@
             "polyfills": "apps/taskana/src/polyfills.ts",
             "tsConfig": "apps/taskana/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "apps/taskana/src/favicon.ico",
-              "apps/taskana/src/assets"
-            ],
+            "assets": ["apps/taskana/src/favicon.ico", "apps/taskana/src/assets"],
             "styles": ["apps/taskana/src/styles.scss"],
             "scripts": []
           },
@@ -108,10 +105,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/taskana/src/**/*.ts",
-              "apps/taskana/src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/taskana/src/**/*.ts", "apps/taskana/src/**/*.html"]
           }
         },
         "test": {
@@ -167,10 +161,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/workbasket/data-access/src/**/*.ts",
-              "libs/workbasket/data-access/src/**/*.html"
-            ]
+            "lintFilePatterns": ["libs/workbasket/data-access/src/**/*.ts", "libs/workbasket/data-access/src/**/*.html"]
           }
         }
       }
@@ -242,10 +233,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/shared/data-access/src/**/*.ts",
-              "libs/shared/data-access/src/**/*.html"
-            ]
+            "lintFilePatterns": ["libs/shared/data-access/src/**/*.ts", "libs/shared/data-access/src/**/*.html"]
           }
         }
       }
@@ -267,9 +255,81 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
+            "lintFilePatterns": ["libs/shared/utils/src/**/*.ts", "libs/shared/utils/src/**/*.html"]
+          }
+        }
+      }
+    },
+    "shared-components-shell-routes": {
+      "projectType": "library",
+      "root": "libs/shared/components/shell/routes",
+      "sourceRoot": "libs/shared/components/shell/routes/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/components/shell/routes"],
+          "options": {
+            "jestConfig": "libs/shared/components/shell/routes/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
             "lintFilePatterns": [
-              "libs/shared/utils/src/**/*.ts",
-              "libs/shared/utils/src/**/*.html"
+              "libs/shared/components/shell/routes/src/**/*.ts",
+              "libs/shared/components/shell/routes/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-components-shell-ui-layout": {
+      "projectType": "library",
+      "root": "libs/shared/components/shell/ui/layout",
+      "sourceRoot": "libs/shared/components/shell/ui/layout/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/components/shell/ui/layout"],
+          "options": {
+            "jestConfig": "libs/shared/components/shell/ui/layout/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/components/shell/ui/layout/src/**/*.ts",
+              "libs/shared/components/shell/ui/layout/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-components-shell-ui-navbar": {
+      "projectType": "library",
+      "root": "libs/shared/components/shell/ui/navbar",
+      "sourceRoot": "libs/shared/components/shell/ui/navbar/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/components/shell/ui/navbar"],
+          "options": {
+            "jestConfig": "libs/shared/components/shell/ui/navbar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/components/shell/ui/navbar/src/**/*.ts",
+              "libs/shared/components/shell/ui/navbar/src/**/*.html"
             ]
           }
         }

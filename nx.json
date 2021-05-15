@@ -40,6 +40,15 @@
     },
     "shared-utils": {
       "tags": ["shared", "util", "guard", "interceptor", "validator"]
+    },
+    "shared-components-shell-routes": {
+      "tags": ["shared", "shell", "route"]
+    },
+    "shared-components-shell-ui-layout": {
+      "tags": ["shared", "ui", "layout"]
+    },
+    "shared-components-shell-ui-navbar": {
+      "tags": ["shared", "ui", "navbar"]
     }
   }
 }
