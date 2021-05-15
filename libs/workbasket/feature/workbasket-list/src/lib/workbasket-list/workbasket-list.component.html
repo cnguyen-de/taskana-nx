@@ -1,5 +1,7 @@
-<p>workbasket-list works!</p>
-
-<div *ngFor="let workbasket of (workbaskets$ | async)">
-  {{workbasket.name}}
+<div class="workbasket-list-wrapper">
+  <div class="workbasket-list">
+    <div *ngFor="let workbasket of (workbaskets$ | async)">
+      <div class="h-10 bg-gray-100 cursor-pointer" (click)="selectWorkbasket(workbasket.workbasketId)">{{workbasket.name}}</div>
+    </div>
+  </div>
 </div>

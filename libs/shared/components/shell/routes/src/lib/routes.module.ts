@@ -8,15 +8,6 @@ export const routes: Route[] = [
       {
         path: 'taskana',
         loadChildren: async () => (await import('@taskana/shared/components/shell/ui/layout')).LayoutModule
-      },
-      {
-        path: 'administration',
-        children: [
-          {
-            path: 'workbaskets',
-            loadChildren: async () => (await import('@taskana/workbasket/feature/workbasket-list')).WorkbasketListModule
-          }
-        ]
       }
     ]
   },

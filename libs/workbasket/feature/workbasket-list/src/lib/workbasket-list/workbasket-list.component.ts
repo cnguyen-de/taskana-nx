@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
-import { GetWorkbaskets, Workbasket, WorkbasketSelectors } from '@taskana/workbasket/data-access';
+import { GetWorkbaskets, SelectWorkbasket, Workbasket, WorkbasketSelectors } from '@taskana/workbasket/data-access';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -15,5 +15,9 @@ export class WorkbasketListComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(new GetWorkbaskets());
+  }
+
+  selectWorkbasket(workbasketId: string) {
+    this.store.dispatch(new SelectWorkbasket(workbasketId));
   }
 }

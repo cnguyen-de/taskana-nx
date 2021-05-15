@@ -22,7 +22,10 @@
       "@taskana/shared/utils": ["libs/shared/utils/src/index.ts"],
       "@taskana/shared/components/shell/routes": ["libs/shared/components/shell/routes/src/index.ts"],
       "@taskana/shared/components/shell/ui/layout": ["libs/shared/components/shell/ui/layout/src/index.ts"],
-      "@taskana/shared/components/shell/ui/navbar": ["libs/shared/components/shell/ui/navbar/src/index.ts"]
+      "@taskana/shared/components/shell/ui/navbar": ["libs/shared/components/shell/ui/navbar/src/index.ts"],
+      "@taskana/shared/components/shell/ui/administration": [
+        "libs/shared/components/shell/ui/administration/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

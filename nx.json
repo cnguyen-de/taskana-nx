@@ -49,6 +49,9 @@
     },
     "shared-components-shell-ui-navbar": {
       "tags": ["shared", "ui", "navbar"]
+    },
+    "shared-components-shell-ui-administration": {
+      "tags": ["shared", "ui", "administration"]
     }
   }
 }

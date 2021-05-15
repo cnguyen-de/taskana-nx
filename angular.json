@@ -334,6 +334,31 @@
           }
         }
       }
+    },
+    "shared-components-shell-ui-administration": {
+      "projectType": "library",
+      "root": "libs/shared/components/shell/ui/administration",
+      "sourceRoot": "libs/shared/components/shell/ui/administration/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/components/shell/ui/administration"],
+          "options": {
+            "jestConfig": "libs/shared/components/shell/ui/administration/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/components/shell/ui/administration/src/**/*.ts",
+              "libs/shared/components/shell/ui/administration/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }
