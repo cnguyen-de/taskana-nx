@@ -23,7 +23,9 @@
       ],
       "@taskana/workbasket/feature/workbasket-details": [
         "libs/workbasket/feature/workbasket-details/src/index.ts"
-      ]
+      ],
+      "@taskana/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@taskana/shared/utils": ["libs/shared/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,3 +1,5 @@
 <p>workbasket-list works!</p>
 
-{{workbaskets}}
+<div *ngFor="let workbasket of (workbaskets$ | async)">
+  {{workbasket.name}}
+</div>

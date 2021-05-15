@@ -8,16 +8,20 @@ import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { WorkbasketState } from '@taskana/workbasket/data-access';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedUtilsModule } from '@taskana/shared/utils';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    CommonModule,
     HttpClientModule,
     BrowserModule,
     WorkbasketListModule,
     WorkbasketDetailsModule,
     NgxsModule.forRoot([WorkbasketState]),
-    NgxsReduxDevtoolsPluginModule.forRoot()
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    SharedUtilsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,15 +3,16 @@ import { Action, State, StateContext } from '@ngxs/store';
 import { GetWorkbaskets } from './workbasket.actions';
 import { WorkbasketService } from '../services/workbasket.service';
 import { take, tap } from 'rxjs/operators';
+import { WorkbasketRepresentation } from '../models/workbasket-representation';
 
 export interface WorkbasketStateModel {
-  workbaskets: number[];
+  workbasketRepresentation: WorkbasketRepresentation;
 }
 
 @State<WorkbasketStateModel>({
   name: 'workbasket',
   defaults: {
-    workbaskets: []
+    workbasketRepresentation: {}
   }
 })
 @Injectable()
@@ -24,8 +25,8 @@ export class WorkbasketState {
   getWorkbaskets(ctx: StateContext<WorkbasketStateModel>) {
     return this.workbasketService.getWorkbaskets().pipe(
       take(1),
-      tap((workbaskets) => {
-        ctx.patchState({ workbaskets });
+      tap((workbasketRepresentation) => {
+        ctx.patchState({ workbasketRepresentation });
       })
     );
   }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngxs/store';
-import { GetWorkbaskets } from '@taskana/workbasket/data-access';
+import { Select, Store } from '@ngxs/store';
+import { GetWorkbaskets, Workbasket, WorkbasketSelectors } from '@taskana/workbasket/data-access';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'taskana-workbasket-list',
@@ -8,19 +9,11 @@ import { GetWorkbaskets } from '@taskana/workbasket/data-access';
   styleUrls: ['./workbasket-list.component.scss']
 })
 export class WorkbasketListComponent implements OnInit {
+  @Select(WorkbasketSelectors.workbaskets) workbaskets$: Observable<Workbasket[]>;
 
-  workbaskets = []
-
-  constructor(private store: Store) {
-    this.store.select(state => state.workbasket.workbaskets).subscribe(workbaskets => {
-      this.workbaskets = workbaskets
-    })
-  }
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.store.dispatch(new GetWorkbaskets())
-    }, 2000)
+    this.store.dispatch(new GetWorkbaskets());
   }
-
 }

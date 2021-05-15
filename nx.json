@@ -34,6 +34,12 @@
     },
     "workbasket-feature-workbasket-details": {
       "tags": ["workbasket", "component", "details"]
+    },
+    "shared-data-access": {
+      "tags": ["shared", "data"]
+    },
+    "shared-utils": {
+      "tags": ["shared", "util", "guard", "interceptor", "validator"]
     }
   }
 }
