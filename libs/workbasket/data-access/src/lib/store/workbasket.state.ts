@@ -17,9 +17,7 @@ export interface WorkbasketStateModel {
 })
 @Injectable()
 export class WorkbasketState {
-  constructor(private workbasketService: WorkbasketService) {
-    console.log('created');
-  }
+  constructor(private workbasketService: WorkbasketService) {}
 
   @Action(GetWorkbaskets)
   getWorkbaskets(ctx: StateContext<WorkbasketStateModel>) {
