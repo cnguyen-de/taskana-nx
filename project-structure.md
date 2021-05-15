@@ -1,0 +1,46 @@
+```
+Base idea:
+.
+└── root
+    ├── apps
+    │   └── client (angular)
+    └── libs
+        └── classifications (dir)
+        │   ├── data-access (angular:lib, service, API calls, state management)
+        │   ├── feature (4)
+        │   │   ├── list (angular:lib e.g. ProductList)
+        │   │   └── detail (angular:lib e.g. ProductDetail)
+        │   ├── ui (dir)
+        │   │   ├── comp-1 (angular:lib, SCAM for Component)
+        │   │   └── pipe-1 (angular:lib, SCAM for Pipe)
+        └── workbaskets (dir)
+        │   ├── data-access (angular:lib, service, API calls, state management)
+        │   ├── feature (4)
+        │   │   ├── list (angular:lib e.g. ProductList)
+        │   │   └── detail (angular:lib e.g. ProductDetail)
+        │   ├── ui (dir)
+        │   │   ├── comp-1 (angular:lib, SCAM for Component)
+        │   │   └── pipe-1 (angular:lib, SCAM for Pipe)
+        └── tasks (dir)
+        │   ├── data-access (angular:lib, service, API calls, state management)
+        │   ├── feature (4)
+        │   │   ├── list (angular:lib e.g. ProductList)
+        │   │   └── detail (angular:lib e.g. ProductDetail)
+        │   ├── ui (dir)
+        │   │   ├── comp-1 (angular:lib, SCAM for Component)
+        │   │   └── pipe-1 (angular:lib, SCAM for Pipe)
+        └── access-id (dir)
+        │   ├── data-access (angular:lib, service, API calls, state management)
+        │   ├── feature (4)
+        │   │   └── user-selector (old type-ahead) (angular:lib e.g. ProductList)
+        │   ├── ui (dir)
+        │   │   ├── comp-1 (angular:lib, SCAM for Component)
+        │   │   └── pipe-1 (angular:lib, SCAM for Pipe)
+        ... (Monitoring, Access Items, Task Comment?)
+        └── shared (dir)
+            ├── shell (dir) //layout - routing config
+            │   └── feature (angular:lib) (3)
+            ├── data-access (angular:lib, any Service or State management to share across the Client app)
+            ├── ui (dir, 5)
+            └── utils (angular:lib, usually shared Guards, Interceptors, Validators...)
+```

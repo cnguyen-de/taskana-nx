@@ -149,6 +149,81 @@
           }
         }
       }
+    },
+    "workbasket-data-access": {
+      "projectType": "library",
+      "root": "libs/workbasket/data-access",
+      "sourceRoot": "libs/workbasket/data-access/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/workbasket/data-access"],
+          "options": {
+            "jestConfig": "libs/workbasket/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/workbasket/data-access/src/**/*.ts",
+              "libs/workbasket/data-access/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "workbasket-feature-workbasket-list": {
+      "projectType": "library",
+      "root": "libs/workbasket/feature/workbasket-list",
+      "sourceRoot": "libs/workbasket/feature/workbasket-list/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/workbasket/feature/workbasket-list"],
+          "options": {
+            "jestConfig": "libs/workbasket/feature/workbasket-list/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/workbasket/feature/workbasket-list/src/**/*.ts",
+              "libs/workbasket/feature/workbasket-list/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "workbasket-feature-workbasket-details": {
+      "projectType": "library",
+      "root": "libs/workbasket/feature/workbasket-details",
+      "sourceRoot": "libs/workbasket/feature/workbasket-details/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/workbasket/feature/workbasket-details"],
+          "options": {
+            "jestConfig": "libs/workbasket/feature/workbasket-details/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/workbasket/feature/workbasket-details/src/**/*.ts",
+              "libs/workbasket/feature/workbasket-details/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

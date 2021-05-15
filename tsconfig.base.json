@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@taskana/workbasket/data-access": [
+        "libs/workbasket/data-access/src/index.ts"
+      ],
+      "@taskana/workbasket/feature/workbasket-list": [
+        "libs/workbasket/feature/workbasket-list/src/index.ts"
+      ],
+      "@taskana/workbasket/feature/workbasket-details": [
+        "libs/workbasket/feature/workbasket-details/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

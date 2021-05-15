@@ -25,6 +25,15 @@
     "taskana-e2e": {
       "tags": [],
       "implicitDependencies": ["taskana"]
+    },
+    "workbasket-data-access": {
+      "tags": ["workbasket", "data", "state"]
+    },
+    "workbasket-feature-workbasket-list": {
+      "tags": ["workbasket", "component", "list"]
+    },
+    "workbasket-feature-workbasket-details": {
+      "tags": ["workbasket", "component", "details"]
     }
   }
 }
