@@ -52,6 +52,9 @@
     },
     "shared-components-shell-ui-administration": {
       "tags": ["shared", "ui", "administration"]
+    },
+    "workplace-feature-task-list": {
+      "tags": ["task", "list", "workplace"]
     }
   }
 }

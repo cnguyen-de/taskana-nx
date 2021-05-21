@@ -359,6 +359,31 @@
           }
         }
       }
+    },
+    "workplace-feature-task-list": {
+      "projectType": "library",
+      "root": "libs/workplace/feature/task-list",
+      "sourceRoot": "libs/workplace/feature/task-list/src",
+      "prefix": "taskana",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/workplace/feature/task-list"],
+          "options": {
+            "jestConfig": "libs/workplace/feature/task-list/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/workplace/feature/task-list/src/**/*.ts",
+              "libs/workplace/feature/task-list/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

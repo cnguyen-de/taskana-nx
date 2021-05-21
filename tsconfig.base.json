@@ -25,7 +25,8 @@
       "@taskana/shared/components/shell/ui/navbar": ["libs/shared/components/shell/ui/navbar/src/index.ts"],
       "@taskana/shared/components/shell/ui/administration": [
         "libs/shared/components/shell/ui/administration/src/index.ts"
-      ]
+      ],
+      "@taskana/workplace/feature/task-list": ["libs/workplace/feature/task-list/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

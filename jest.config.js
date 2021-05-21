@@ -9,6 +9,7 @@ module.exports = {
     '<rootDir>/libs/shared/components/shell/routes',
     '<rootDir>/libs/shared/components/shell/ui/layout',
     '<rootDir>/libs/shared/components/shell/ui/navbar',
-    '<rootDir>/libs/shared/components/shell/ui/administration'
+    '<rootDir>/libs/shared/components/shell/ui/administration',
+    '<rootDir>/libs/workplace/feature/task-list'
   ]
 };

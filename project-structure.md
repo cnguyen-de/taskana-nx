@@ -36,7 +36,7 @@ Base idea:
         │   ├── ui (dir)
         │   │   ├── comp-1 (angular:lib, SCAM for Component)
         │   │   └── pipe-1 (angular:lib, SCAM for Pipe)
-        ... (Monitoring, Access Items, Task Comment?)
+        ... (Monitoring, Task Comment?)
         └── shared (dir)
             ├── shell (dir) //layout - routing config
             │   └── feature (angular:lib) (3)
